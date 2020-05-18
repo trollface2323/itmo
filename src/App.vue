@@ -2,7 +2,8 @@
 
     <div class="main">
         <head>
-            <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Roboto:wght@300;500;700;900&display=swap"
+                  rel="stylesheet">
 
 
         </head>
@@ -68,20 +69,24 @@
         <section class="social">
             <div class="social__title">мы в соцсетях</div>
             <div class="social__networks">
-                <a href="" class="social__networks-item">ВКонтакте</a>
-                <a href="" class="social__networks-item">Instagram</a>
-                <a href="" class="social__networks-item">Telegram</a>
-                <a href="" class="social__networks-item">YouTube</a>
-                <a href="" class="social__networks-item">Facebook</a>
-                <a href="" class="social__networks-item">Mail</a>
+                <a href="" class="social__networks-item" style="background: #414E7E;"><span>ВКонтакте</span><i
+                        class="fab fa-vk"></i></a>
+                <a href="" class="social__networks-item" style="background: #F79C49;"><span>Instagram</span><i
+                        class="fab fa-instagram"></i></a>
+                <a href="" class="social__networks-item" style="background: #60AEE8;"><span>Telegram</span><i
+                        class="fab fa-telegram-plane"></i></a>
+                <a href="" class="social__networks-item" style="background: #EB3F3F;"><span>YouTube</span><i
+                        class="fab fa-youtube"></i></a>
+                <a href="" class="social__networks-item" style="background: #293357;"><span>Facebook</span><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="" class="social__networks-item" style="background: #CFED8E;"><span>Mail</span><i
+                        class="far fa-envelope"></i></a>
             </div>
         </section>
-
     </div>
 </template>
 
 <script>
-
 
     export default {
         name: 'App',
@@ -90,11 +95,6 @@
 </script>
 
 <style lang="scss">
-    a{
-        font-size: 40px;
-        margin: 0;
-        padding: 0;
-    }
 
     .main {
         margin: 0 auto;
@@ -108,11 +108,11 @@
         color: #fff;
 
         &__list {
+            margin-top: -8px;
             display: flex;
             justify-content: space-between;
             text-transform: uppercase;
             padding-top: 44px;
-            margin: -8px 0 0 0;
             font-weight: 600;
 
             & li {
@@ -177,6 +177,10 @@
         border: 2px #60AEE8 solid;
         border-radius: 20px;
         text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
+
 
     }
 
@@ -210,6 +214,7 @@
 
     .news {
         height: 670px;
+
         &__title {
             display: flex;
             align-items: center;
@@ -235,9 +240,11 @@
             color: #60AEE8;
         }
     }
-    .social{
+
+    .social {
         font-family: 'Roboto', sans-serif;
-        &__title{
+
+        &__title {
             text-align: center;
             text-transform: uppercase;
             color: #3D5084;
@@ -246,25 +253,51 @@
             margin: 30px 0 0 50%;
             transform: translateX(-50%);
         }
-        &__networks{
+
+        &__networks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             width: 960px;
             margin: 0 auto;
-            outline: red 2px   solid;
+            margin-top: 25px;
+            & a{
+                text-decoration: none;
+                &:hover{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
 
-        }
-        a{
-            display: inline-block;
-            outline: red 2px solid;
-            text-decoration: none;
-            height: 40px;
-            width: 280px;
-            border-radius: 5px;
-            margin:0 60px 25px 0;
-            font-size: 18px;
-            color: #000;
+            &-item {
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding-right: 80px;
+                height: 40px;
+                width: 280px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px 5px black;
+                font-size: 18px;
+                margin-bottom: 25px;
+                color: #fff;
+                
+
+                & svg{
+                    position: absolute;
+                    right: 15px;
+                    top: 10px;
+                }
+
+                & span {
+                    margin-left: 40px;
+                }
+
+
+            }
         }
     }
-
-
-
 </style>
+
+
+
