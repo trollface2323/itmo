@@ -76,10 +76,12 @@
                 <a href="" class="social__networks-item">Mail</a>
             </div>
         </section>
+
     </div>
 </template>
 
 <script>
+
 
     export default {
         name: 'App',
@@ -88,6 +90,11 @@
 </script>
 
 <style lang="scss">
+    a{
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+    }
 
     .main {
         margin: 0 auto;
@@ -101,21 +108,17 @@
         color: #fff;
 
         &__list {
-
             display: flex;
             justify-content: space-between;
             text-transform: uppercase;
             padding-top: 44px;
+            margin: -8px 0 0 0;
             font-weight: 600;
 
             & li {
 
                 list-style: none;
             }
-        }
-        .menu ul{
-            margin: 0;
-            padding: 0;
         }
 
         &__item img {
@@ -250,6 +253,8 @@
 
         }
         a{
+            display: inline-block;
+            outline: red 2px solid;
             text-decoration: none;
             height: 40px;
             width: 280px;
