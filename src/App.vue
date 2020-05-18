@@ -113,6 +113,10 @@
                 list-style: none;
             }
         }
+        .menu ul{
+            margin: 0;
+            padding: 0;
+        }
 
         &__item img {
             height: 90px;
