@@ -2,7 +2,7 @@
 
     <div class="main">
         <head>
-            <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Roboto:wght@300;500;700;900&display=swap"
+            <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Roboto:wght@300;500;600;700;900&display=swap"
                   rel="stylesheet">
 
 
@@ -69,19 +69,51 @@
         <section class="social">
             <div class="social__title">мы в соцсетях</div>
             <div class="social__networks">
-                <a href="" class="social__networks-item" style="background: #414E7E;"><span>ВКонтакте</span><i
+                <a href="" class="social__networks-item"
+                   style="background: #414E7E; box-shadow: 0 0 10px #414E7E;"><span>ВКонтакте</span><i
                         class="fab fa-vk"></i></a>
-                <a href="" class="social__networks-item" style="background: #F79C49;"><span>Instagram</span><i
+                <a href="" class="social__networks-item" style="background: #F79C49;
+                box-shadow: 0 0 10px #F79C49;"><span>Instagram</span><i
                         class="fab fa-instagram"></i></a>
-                <a href="" class="social__networks-item" style="background: #60AEE8;"><span>Telegram</span><i
+                <a href="" class="social__networks-item"
+                   style="background: #60AEE8; box-shadow: 0 0 10px #60AEE8"><span>Telegram</span><i
                         class="fab fa-telegram-plane"></i></a>
-                <a href="" class="social__networks-item" style="background: #EB3F3F;"><span>YouTube</span><i
+                <a href="" class="social__networks-item"
+                   style="background: #EB3F3F; box-shadow: 0 0 10px #EB3F3F"><span>YouTube</span><i
                         class="fab fa-youtube"></i></a>
-                <a href="" class="social__networks-item" style="background: #293357;"><span>Facebook</span><i
+                <a href="" class="social__networks-item"
+                   style="background: #293357; box-shadow: 0 0 10px #293357"><span>Facebook</span><i
                         class="fab fa-facebook-f"></i></a>
-                <a href="" class="social__networks-item" style="background: #CFED8E;"><span>Mail</span><i
+                <a href="" class="social__networks-item"
+                   style="background: #CFED8E; box-shadow: 0 0 10px #CFED8E"><span>Mail</span><i
                         class="far fa-envelope"></i></a>
             </div>
+        </section>
+        <section class="footer">
+            <div class="footer__title">
+                <div class="row">
+                    <div class="col-1 offset-2">Контакты</div>
+                    <div class="col-auto offset-5">Хочу вступить</div>
+                </div>
+            </div>
+            <div class="footer__sub-title">
+                <div class="row">
+                    <div class="col-1 offset-2">Офис:</div>
+                    <div class="col-auto offset-1">Тренировочная база:</div>
+                    <div class="col-auto offset-2">Оставь свои контакты</div>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="row">
+                    <div class="col-2 offset-2">г. Санкт-Петербург ул. Ломоносова, 9; к. 4402</div>
+                    <div class="col-2">г. Санкт-Петербург Северная дорога, 25</div>
+                    <div class="col-2">+7 (923) 546-43-21 info@iurc.com</div>
+                    <div class="col d-flex">
+                        <input type="text"> <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </div>
 </template>
@@ -177,7 +209,8 @@
         border: 2px #60AEE8 solid;
         border-radius: 20px;
         text-decoration: none;
-        &:hover{
+
+        &:hover {
             text-decoration: none;
         }
 
@@ -243,6 +276,7 @@
 
     .social {
         font-family: 'Roboto', sans-serif;
+        height: 230px;
 
         &__title {
             text-align: center;
@@ -261,9 +295,11 @@
             width: 960px;
             margin: 0 auto;
             margin-top: 25px;
-            & a{
+
+            & a {
                 text-decoration: none;
-                &:hover{
+
+                &:hover {
                     text-decoration: none;
                     color: #fff;
                 }
@@ -277,13 +313,12 @@
                 height: 40px;
                 width: 280px;
                 border-radius: 10px;
-                box-shadow: 0 0 10px 5px black;
                 font-size: 18px;
                 margin-bottom: 25px;
                 color: #fff;
-                
 
-                & svg{
+
+                & svg {
                     position: absolute;
                     right: 15px;
                     top: 10px;
@@ -294,6 +329,59 @@
                 }
 
 
+            }
+        }
+    }
+
+    .footer {
+        height: 240px;
+        background: #414E7E;
+
+        &__title {
+            padding-top: 40px;
+            margin-bottom: 25px;
+            & .row {
+                color: #fff;
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+
+        &__sub-title {
+            margin-bottom: 20px;
+            color: #60AEE8;
+            font-size: 18px;
+            font-weight: 600;
+            & .offset-1{
+                margin-left: 140px;
+            }
+            & .row div:last-child{
+
+                margin-left: 263px;
+            }
+        }
+
+        &__info {
+            font-size: 16px;
+            color: #fff;
+            font-weight: 500;
+            & .row div:first-child{
+                margin-right: 20px;
+            }
+
+            & .row div:last-child{
+                margin-left: -20px;
+            }
+            & input{
+                border-radius: 10px;
+                height: 30px;
+            }
+            & .d-flex{
+                align-items: center;
+            }
+            & svg{
+                margin-left: 20px;
+                font-size: 30px;
             }
         }
     }
