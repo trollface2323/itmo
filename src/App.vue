@@ -91,27 +91,22 @@
         </section>
         <section class="footer">
             <div class="footer__title">
-                <div class="row">
-                    <div class="col-1 offset-2">Контакты</div>
-                    <div class="col-auto offset-5">Хочу вступить</div>
-                </div>
+                <div class="footer__title-1">Контакты</div>
+                <div class="footer__title-2">Хочу вступить</div>
             </div>
             <div class="footer__sub-title">
-                <div class="row">
-                    <div class="col-1 offset-2">Офис:</div>
-                    <div class="col-auto offset-1">Тренировочная база:</div>
-                    <div class="col-auto offset-2">Оставь свои контакты</div>
-                </div>
+                <div class="footer__sub-title-1">Офис:</div>
+                <div class="footer__sub-title-2">Тренировочная база:</div>
+                <div class="footer__sub-title-3">Оставь свои контакты</div>
             </div>
             <div class="footer__info">
-                <div class="row">
-                    <div class="col-2 offset-2">г. Санкт-Петербург ул. Ломоносова, 9; к. 4402</div>
-                    <div class="col-2">г. Санкт-Петербург Северная дорога, 25</div>
-                    <div class="col-2">+7 (923) 546-43-21 info@iurc.com</div>
-                    <div class="col d-flex">
-                        <input type="text"> <i class="fas fa-angle-right"></i>
-                    </div>
+                <div class="footer__info-1">
+                    г. Санкт-Петербург<br> ул. Ломоносова, 9; к. 4402
                 </div>
+                <div class="footer__info-2">г. Санкт-Петербург<br> Северная дорога, 25</div>
+                <div class="footer__info-3">+7 (923) 546-43-21<br> info@iurc.com</div>
+                <div class="footer__info-4"><input type="text"></div>
+                <div class="footer__info-5"><i class="fas fa-angle-right"></i></div>
             </div>
 
         </section>
@@ -340,50 +335,63 @@
         &__title {
             padding-top: 40px;
             margin-bottom: 25px;
-            & .row {
-                color: #fff;
-                font-size: 24px;
-                font-weight: 600;
+            display: flex;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+
+            &-1 {
+                margin: 0 630px 0 200px;
+
             }
         }
 
         &__sub-title {
+            display: flex;
             margin-bottom: 20px;
             color: #60AEE8;
             font-size: 18px;
             font-weight: 600;
-            & .offset-1{
-                margin-left: 140px;
+            &-1{
+                margin: 0 200px 0 200px;
             }
-            & .row div:last-child{
+            &-2{
+                margin-right: 306px;
+            }
 
-                margin-left: 263px;
+            & .offset-1 {
+                margin-left: 140px;
             }
         }
 
         &__info {
+            display: flex;
+            align-items: center;
             font-size: 16px;
             color: #fff;
             font-weight: 500;
-            & .row div:first-child{
+            &-1{
+                margin: 0 53px 0 200px;
+            }
+            &-3{
+                margin: 0 75px 0 116px;
+            }
+
+            & input {
+                border-radius: 10px;
+                height: 30px;
                 margin-right: 20px;
             }
 
-            & .row div:last-child{
-                margin-left: -20px;
-            }
-            & input{
-                border-radius: 10px;
-                height: 30px;
-            }
-            & .d-flex{
-                align-items: center;
-            }
-            & svg{
-                margin-left: 20px;
+            & svg {
                 font-size: 30px;
+                margin-top: 5px;
             }
         }
+    }
+
+    .r {
+        outline: red 2px solid;
     }
 </style>
 
