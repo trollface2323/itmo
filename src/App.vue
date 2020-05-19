@@ -8,7 +8,10 @@
 
         </head>
         <section class="header">
-            <div class="menu">
+            <div class="header__photo r">
+                <img src="./photo/head.png" alt="">
+            </div>
+            <div class="menu r">
                 <ul class="menu__list">
                     <li class="menu__item">о нас</li>
                     <li class="menu__item">история</li>
@@ -109,6 +112,7 @@
                 <div class="footer__info-5"><i class="fas fa-angle-right"></i></div>
             </div>
 
+
         </section>
     </div>
 </template>
@@ -124,20 +128,19 @@
 <style lang="scss">
 
     .main {
-        margin: 0 auto;
-        max-width: 1440px;
     }
 
 
     .menu {
-        margin: 0 auto;
-        width: 1219px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
         color: #fff;
 
         &__list {
-            margin-top: -8px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             text-transform: uppercase;
             padding-top: 44px;
             font-weight: 600;
@@ -157,17 +160,27 @@
 
 
     .header {
-        margin: 0 auto;
+        /*margin: 0 auto;*/
         font-family: 'Roboto', sans-serif;
-        height: 1024px;
-        background-image: url(photo/head.png);
+        /*height: 1024px;*/
+        /*background-image: url(photo/head.png);*/
 
+        &__photo {
+            position: relative;
+        }
+
+        & img {
+            /*position: absolute;*/
+            top: 0;
+            left: 0;
+            object-fit: contain;
+        }
     }
 
     .about {
         font-family: 'Roboto', sans-serif;
 
-        display: flex;
+        display: inline-block;
 
         &__text {
             margin: 0 auto;
@@ -352,10 +365,12 @@
             color: #60AEE8;
             font-size: 18px;
             font-weight: 600;
-            &-1{
+
+            &-1 {
                 margin: 0 200px 0 200px;
             }
-            &-2{
+
+            &-2 {
                 margin-right: 306px;
             }
 
@@ -370,10 +385,12 @@
             font-size: 16px;
             color: #fff;
             font-weight: 500;
-            &-1{
+
+            &-1 {
                 margin: 0 53px 0 200px;
             }
-            &-3{
+
+            &-3 {
                 margin: 0 75px 0 116px;
             }
 
