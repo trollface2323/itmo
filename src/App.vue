@@ -1,17 +1,20 @@
 <template>
-    <div class="menu">
-        <div class="menu__burger" :class="{active}" @click="active = !active"><span></span></div>
-        <div class="menu__logo">
-            <img src="./photo/logo.png" alt="">
+    <div class="header">
+        <div class="header__body">
+            <div class="header__logo">
+                <img src="./photo/logo.png" alt="">
+            </div>
+            <div class="header__burger" :class="{active}" @click="active = !active"><span></span></div>
+           <nav class="header__menu"></nav>
+            <ul class="header__list">
+                <li><a href="#" class="header__link link">о нас</a></li>
+                <li><a href="#" class="header__link link">история</a></li>
+                <li><a href="#" class="header__link link">команда</a></li>
+                <li><a href="#" class="header__link link">новости</a></li>
+                <li><a href="#" class="header__link link">медиа</a></li>
+                <li><a href="#" class="header__link link">контакты</a></li>
+            </ul>
         </div>
-        <ul class="menu__list">
-            <li class="menu__item"><a href="#">о нас</a></li>
-            <li class="menu__item">история</li>
-            <li class="menu__item">команда</li>
-            <li class="menu__item">новости</li>
-            <li class="menu__item">медиа</li>
-            <li class="menu__item">контакты</li>
-        </ul>
     </div>
 </template>
 
@@ -29,17 +32,37 @@
 
 <style scoped lang="scss">
 
-    .menu {
-        background: #414E7E;
+    .link{
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    .header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        color: #fff;
-        height: 112px;
+        color: #abd;
         z-index: 10;
 
-        .menu__logo {
+        &:before {
+            content: '';
+            background: #414E7E;
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+
+        }
+        &__body{
+            position: relative;
+            margin: 40px 0;
+            z-index: 2;
+        }
+
+        &__logo {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -54,23 +77,19 @@
             display: flex;
             justify-content: center;
             text-transform: uppercase;
-            padding-top: 44px;
             font-weight: 600;
 
             & li {
                 margin: 0 40px;
                 list-style: none;
 
+
                 &:nth-child(3) {
                     margin-right: 250px;
                 }
-            }
-        }
 
-        &__item img {
-            height: 90px;
-            width: 160px;
-            transform: translateY(-40%);
+
+            }
         }
     }
 
@@ -86,16 +105,19 @@
                 top: 55px;
                 transform: translateY(-50%);
                 cursor: pointer;
-                &.active{
+
+                &.active {
                     & span {
                         transform: scale(0);
                         transition: all 0.5s ease 0s;
                     }
-                    &:before{
+
+                    &:before {
                         transform: rotate(45deg);
                         top: 14px;
                     }
-                    &:after{
+
+                    &:after {
                         transform: rotate(-45deg);
                         bottom: 13px;
                     }
@@ -136,6 +158,11 @@
                     transition: all 0.5s ease 0s;
 
                 }
+            }
+
+            &__list {
+                display: block;
+                margin-top: 100px;
             }
         }
 
