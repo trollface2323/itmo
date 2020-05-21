@@ -2,20 +2,27 @@
     <link rel="stylesheet" href="./normilize.css">
 </head>
 <template>
-    <div class="header">
-        <div class="header__body">
-            <div class="header__logo">
-                <img src="./photo/logo.png" alt="">
+    <div class="menu">
+        <div class="menu__body r" :class="{active}">
+            <div class="menu__burger" :class="{active}" @click="active = !active"><span></span></div>
+            <div class="menu__logo">
+                <a href="#">
+                    <img src="./photo/logo.png" alt="">
+                </a>
             </div>
-            <div class="header__burger" :class="{active}" @click="active = !active"><span></span></div>
-           <nav class="header__menu"></nav>
-            <ul class="header__list">
-                <li><a href="#" class="header__link link">о нас</a></li>
-                <li><a href="#" class="header__link link">история</a></li>
-                <li><a href="#" class="header__link link">команда</a></li>
-                <li><a href="#" class="header__link link">новости</a></li>
-                <li><a href="#" class="header__link link">медиа</a></li>
-                <li><a href="#" class="header__link link">контакты</a></li>
+            <ul class="menu__list r" >
+                <div class="menu__photo">
+                    <img src="./photo/menu.png" alt="">
+                </div>
+                <!--                <li class="menu__item link"><a href="#" class="link">-->
+                <!--                    <img src="./photo/menu.png" alt="">-->
+                <!--                </a></li>-->
+                <li class="menu__item link"><a href="#" class="link">о нас</a></li>
+                <li class="menu__item link"><a href="#" class="link">история</a></li>
+                <li class="menu__item link"><a href="#" class="link">команда</a></li>
+                <li class="menu__item link"><a href="#" class="link">новости</a></li>
+                <li class="menu__item link"><a href="#" class="link">медиа</a></li>
+                <li class="menu__item link"><a href="#" class="link">контакты</a></li>
             </ul>
         </div>
     </div>
@@ -39,34 +46,33 @@
         margin: 0;
         padding: 0;
 
-    .link{
-        text-decoration: none;
-        color: #fff;
-
     }
 
-    .header {
+    .link {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu {
+        background: #414E7E;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        color: #abd;
+        height: 112px;
         z-index: 10;
 
-        &:before {
-            content: '';
-            background: #414E7E;
-            top: 0;
-            left: 0;
-            position: absolute;
-            height: 100%;
-            width: 100%;
-
-        }
-        &__body{
+        &__photo {
             position: relative;
-            margin: 40px 0;
-            z-index: 2;
+            display: none;
+
+            /*top: 80px;*/
+        }
+
+        &__body {
+            display: flex;
+            justify-content: center;
+
         }
 
         &__logo {
@@ -88,29 +94,44 @@
             display: flex;
             justify-content: center;
             text-transform: uppercase;
+            padding-top: 44px;
             font-weight: 600;
             width: 100%;
+
 
 
             & li {
                 margin: 0 3%;
                 list-style: none;
 
+                /*&:nth-child(1) {*/
+                /*    display: none;*/
+                /*}*/
 
-                &:nth-child(3) {
-                    margin-right: 250px;
+                &:nth-child(2) {
+                    /*margin-left: 0%;*/
                 }
 
+                &:nth-child(3) {
 
+                    /*margin-right: 0%;*/
+                    padding-left: 40px;
+
+                }
+
+                &:nth-child(4) {
+                    margin-right: 15%;
+                    /*margin-left: 9%;*/
+                }
             }
         }
+
     }
 
     @media (max-width: 1023px) {
         .menu {
             height: 80px;
-
-            &__body.active {
+            &__body.active{
                 top: -100%;
                 background: #000;
 
@@ -141,14 +162,19 @@
                     margin: 5px 0;
                     border-bottom: 1px solid gray;
 
-                    &:nth-child(5) {
-                        margin-left: 0;
+                    &:nth-child(3) {
+                        /*margin-right: 0;*/
+                        padding-left: 0;
                     }
 
                     &:nth-child(4) {
                         margin-right: 0;
+                        /*margin-left: 0;*/
                     }
                 }
+                /*<!--&.active{-->*/
+                /*<!--    top: -100%;-->*/
+                /*<!--}-->*/
             }
 
             &__burger {
@@ -213,11 +239,6 @@
                     transition: all 0.5s ease 0s;
 
                 }
-            }
-
-            &__list {
-                display: block;
-                margin-top: 100px;
             }
         }
     }
