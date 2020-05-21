@@ -110,36 +110,48 @@
         .menu {
             height: 80px;
 
-            &__body.active {
-                top: -100%;
-                background: #000;
+            &__body.slide {
 
             }
 
             &__photo {
+                text-align: center;
                 display: block;
+
+                & img {
+                    width: 100%;
+                }
             }
 
             &__logo {
-                max-width: 100px;
+                max-width: 90px;
+                z-index: 2;
             }
 
             &__list {
+                /*position: absolute;*/
                 display: flex;
+                position: relative;
                 flex-direction: column;
                 align-items: center;
                 padding-top: 80px;
                 background: #414E7E;
-                top: 0;
-                left: 0;
+                margin-top: -634px;
+                top: 10%;
                 width: 100%;
                 height: 100%;
+                transition: all 0.5s ease 0s;
+
+                &.active {
+                    margin-top: 0;
+                }
 
                 & li {
                     text-align: center;
                     width: 100%;
                     margin: 5px 0;
                     border-bottom: 1px solid gray;
+                    padding: 10px 0;
 
                     &:nth-child(5) {
                         margin-left: 0;
@@ -160,6 +172,7 @@
                 top: 45px;
                 transform: translateY(-50%);
                 cursor: pointer;
+                z-index: 2;
 
                 &.active {
                     & span {
