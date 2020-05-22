@@ -7,113 +7,100 @@
 
 
         </head>
-        <section class="header">
-            <div class="header__photo bg-cover r">
 
+
+        <section class="about">
+            <div class="about-photo">
+                <img src="" alt="">
             </div>
-            <div class="menu r">
-                <ul class="menu__list">
-                    <li class="menu__item">о нас</li>
-                    <li class="menu__item">история</li>
-                    <li class="menu__item">команда</li>
-                    <li class="menu__item"><img src="./photo/logo.png" alt=""></li>
-                    <li class="menu__item">новости</li>
-                    <li class="menu__item">медиа</li>
-                    <li class="menu__item">контакты</li>
-                </ul>
+            <div class="about__text">
+                <div class="about__title">о нас</div>
+                <div class="about__sub-title">
+                    <p>Гребной клуб Университета ИТМО - это не просто гребной спорт. Это команда,
+                        где каждый может найти для себя что-то интересное: от профессионального спорта до спортивной
+                        журналистики и фотографа.</p>
+                    <p>Существуем с 2013 года. В этом году наша команда впервые вышла на мировой уровень. </p>
+                    <p> За лето 2018 г. мы побывали на соревнованиях в 4 странах и участвовали в 3 международных
+                        регатах:
+                        в Китае, Польше и Германии, где боролись с лучшими командами всего мира.</p>
+                </div>
+                <div class="about__link">
+                    <a href="" class="about__link-item link">история клуба</a>
+                </div>
             </div>
         </section>
-        <!--        <section class="about">-->
-        <!--            <div class="about-photo">-->
-        <!--                <img src="" alt="">-->
-        <!--            </div>-->
-        <!--            <div class="about__text">-->
-        <!--                <div class="about__title">о нас</div>-->
-        <!--                <div class="about__sub-title">-->
-        <!--                    <p>Гребной клуб Университета ИТМО - это не просто гребной спорт. Это команда,-->
-        <!--                        где каждый может найти для себя что-то интересное: от профессионального спорта до спортивной-->
-        <!--                        журналистики и фотографа.</p>-->
-        <!--                    <p>Существуем с 2013 года. В этом году наша команда впервые вышла на мировой уровень. </p>-->
-        <!--                    <p> За лето 2018 г. мы побывали на соревнованиях в 4 странах и участвовали в 3 международных-->
-        <!--                        регатах:-->
-        <!--                        в Китае, Польше и Германии, где боролись с лучшими командами всего мира.</p>-->
-        <!--                </div>-->
-        <!--                <div class="about__link">-->
-        <!--                    <a href="" class="about__link-item link">история клуба</a>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </section>-->
-        <!--        <section class="team">-->
-        <!--            <div class="team__title">наша команда</div>-->
-        <!--            <div class="team__info">-->
+        <section class="team">
+            <div class="team__title">наша команда</div>
+            <div class="team__info">
 
-        <!--            </div>-->
-        <!--        </section>-->
-        <!--        <section class="news">-->
-        <!--            <div class="news__title">-->
-        <!--                <span>новости</span>-->
-        <!--                <a href="" class="news__link link">все новости</a>-->
-        <!--            </div>-->
-        <!--        </section>-->
-        <!--        <section class="photos">-->
-        <!--            <img src="./photo/pic1.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic2.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic3.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic4.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic5.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic6.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic7.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic8.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic9.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic10.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic11.png" alt="" class="photos_item">-->
-        <!--            <img src="./photo/pic12.png" alt="" class="photos_item">-->
-        <!--        </section>-->
-        <!--        <section class="social">-->
-        <!--            <div class="social__title">мы в соцсетях</div>-->
-        <!--            <div class="social__networks">-->
-        <!--                <a href="" class="social__networks-item"-->
-        <!--                   style="background: #414E7E; box-shadow: 0 0 10px #414E7E;"><span>ВКонтакте</span><i-->
-        <!--                        class="fab fa-vk"></i></a>-->
-        <!--                <a href="" class="social__networks-item" style="background: #F79C49;-->
-        <!--                box-shadow: 0 0 10px #F79C49;"><span>Instagram</span><i-->
-        <!--                        class="fab fa-instagram"></i></a>-->
-        <!--                <a href="" class="social__networks-item"-->
-        <!--                   style="background: #60AEE8; box-shadow: 0 0 10px #60AEE8"><span>Telegram</span><i-->
-        <!--                        class="fab fa-telegram-plane"></i></a>-->
-        <!--                <a href="" class="social__networks-item"-->
-        <!--                   style="background: #EB3F3F; box-shadow: 0 0 10px #EB3F3F"><span>YouTube</span><i-->
-        <!--                        class="fab fa-youtube"></i></a>-->
-        <!--                <a href="" class="social__networks-item"-->
-        <!--                   style="background: #293357; box-shadow: 0 0 10px #293357"><span>Facebook</span><i-->
-        <!--                        class="fab fa-facebook-f"></i></a>-->
-        <!--                <a href="" class="social__networks-item"-->
-        <!--                   style="background: #CFED8E; box-shadow: 0 0 10px #CFED8E"><span>Mail</span><i-->
-        <!--                        class="far fa-envelope"></i></a>-->
-        <!--            </div>-->
-        <!--        </section>-->
-        <!--        <section class="footer">-->
-        <!--            <div class="footer__title">-->
-        <!--                <div class="footer__title-1">Контакты</div>-->
-        <!--                <div class="footer__title-2">Хочу вступить</div>-->
-        <!--            </div>-->
-        <!--            <div class="footer__sub-title">-->
-        <!--                <div class="footer__sub-title-1">Офис:</div>-->
-        <!--                <div class="footer__sub-title-2">Тренировочная база:</div>-->
-        <!--                <div class="footer__sub-title-3">Оставь свои контакты</div>-->
-        <!--            </div>-->
-        <!--            <div class="footer__info">-->
-        <!--                <div class="footer__info-1">-->
-        <!--                    г. Санкт-Петербург<br> ул. Ломоносова, 9; к. 4402-->
-        <!--                </div>-->
-        <!--                <div class="footer__info-2">г. Санкт-Петербург<br> Северная дорога, 25</div>-->
-        <!--                <div class="footer__info-3">+7 (923) 546-43-21<br> info@iurc.com</div>-->
-        <!--                <div class="footer__info-4"><input type="text"></div>-->
-        <!--                <div class="footer__info-5"><i class="fas fa-angle-right"></i></div>-->
-        <!--            </div>-->
+            </div>
+        </section>
+        <section class="news">
+            <div class="news__title">
+                <span>новости</span>
+                <a href="" class="news__link link">все новости</a>
+            </div>
+        </section>
+        <section class="photos">
+            <img src="./photo/pic1.png" alt="" class="photos_item">
+            <img src="./photo/pic2.png" alt="" class="photos_item">
+            <img src="./photo/pic3.png" alt="" class="photos_item">
+            <img src="./photo/pic4.png" alt="" class="photos_item">
+            <img src="./photo/pic5.png" alt="" class="photos_item">
+            <img src="./photo/pic6.png" alt="" class="photos_item">
+            <img src="./photo/pic7.png" alt="" class="photos_item">
+            <img src="./photo/pic8.png" alt="" class="photos_item">
+            <img src="./photo/pic9.png" alt="" class="photos_item">
+            <img src="./photo/pic10.png" alt="" class="photos_item">
+            <img src="./photo/pic11.png" alt="" class="photos_item">
+            <img src="./photo/pic12.png" alt="" class="photos_item">
+        </section>
+        <section class="social">
+            <div class="social__title">мы в соцсетях</div>
+            <div class="social__networks">
+                <a href="" class="social__networks-item"
+                   style="background: #414E7E; box-shadow: 0 0 10px #414E7E;"><span>ВКонтакте</span><i
+                        class="fab fa-vk"></i></a>
+                <a href="" class="social__networks-item" style="background: #F79C49;
+                        box-shadow: 0 0 10px #F79C49;"><span>Instagram</span><i
+                        class="fab fa-instagram"></i></a>
+                <a href="" class="social__networks-item"
+                   style="background: #60AEE8; box-shadow: 0 0 10px #60AEE8"><span>Telegram</span><i
+                        class="fab fa-telegram-plane"></i></a>
+                <a href="" class="social__networks-item"
+                   style="background: #EB3F3F; box-shadow: 0 0 10px #EB3F3F"><span>YouTube</span><i
+                        class="fab fa-youtube"></i></a>
+                <a href="" class="social__networks-item"
+                   style="background: #293357; box-shadow: 0 0 10px #293357"><span>Facebook</span><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="" class="social__networks-item"
+                   style="background: #CFED8E; box-shadow: 0 0 10px #CFED8E"><span>Mail</span><i
+                        class="far fa-envelope"></i></a>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer__title">
+                <div class="footer__title-1">Контакты</div>
+                <div class="footer__title-2">Хочу вступить</div>
+            </div>
+            <div class="footer__sub-title">
+                <div class="footer__sub-title-1">Офис:</div>
+                <div class="footer__sub-title-2">Тренировочная база:</div>
+                <div class="footer__sub-title-3">Оставь свои контакты</div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__info-1">
+                    г. Санкт-Петербург<br> ул. Ломоносова, 9; к. 4402
+                </div>
+                <div class="footer__info-2">г. Санкт-Петербург<br> Северная дорога, 25</div>
+                <div class="footer__info-3">+7 (923) 546-43-21<br> info@iurc.com</div>
+                <div class="footer__info-4"><input type="text"></div>
+                <div class="footer__info-5"><i class="fas fa-angle-right"></i></div>
+            </div>
 
 
-        <!--        </section>-->
+        </section>
+
     </div>
 </template>
 
@@ -399,6 +386,7 @@
     .r {
         outline: red 2px solid;
     }
+
     /*@media (max-width: ) {*/
     /*    */
     /*}*/

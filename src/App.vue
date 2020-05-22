@@ -1,6 +1,3 @@
-<head>
-    <link rel="stylesheet" href="./normilize.css">
-</head>
 <template>
     <div class="header">
         <div class="header__body">
@@ -24,20 +21,12 @@
 <script>
 
     export default {
-        name: "Menu",
-        data() {
-            return {
-                active: false
-            }
-        },
-        methods: {}
+        name: 'App',
+        components: {}
     }
 </script>
 
 <style scoped lang="scss">
-    ul {
-        margin: 0;
-        padding: 0;
 
     .link{
         text-decoration: none;
@@ -69,28 +58,18 @@
             z-index: 2;
         }
 
-        &__logo {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            & img {
-                width: 100%;
             }
         }
 
-        &__burger {
-            display: none;
-        }
-
-        &__list {
+        &__sub-title {
             display: flex;
             justify-content: center;
             text-transform: uppercase;
             font-weight: 600;
-            width: 100%;
 
+            &-1 {
+                margin: 0 200px 0 200px;
+            }
 
             & li {
                 margin: 0 3%;
@@ -106,126 +85,35 @@
         }
     }
 
+            &-1 {
+                margin: 0 53px 0 200px;
+            }
+
+            &-3 {
+                margin: 0 75px 0 116px;
+            }
+
+            & input {
+                border-radius: 10px;
+                height: 30px;
+                margin-right: 20px;
+            }
+
+            & svg {
+                font-size: 30px;
+                margin-top: 5px;
+            }
+        }
+    }
+
     @media (max-width: 1023px) {
-        .menu {
-            height: 80px;
-
-            &__body.slide {
-
-            }
-
-            &__photo {
-                text-align: center;
-                display: block;
-
-                & img {
-                    width: 100%;
-                }
-            }
-
-            &__logo {
-                max-width: 90px;
-                z-index: 2;
-            }
-
-            &__list {
-                /*position: absolute;*/
-                display: flex;
-                position: relative;
-                flex-direction: column;
-                align-items: center;
-                padding-top: 80px;
-                background: #414E7E;
-                margin-top: -634px;
-                top: 10%;
-                width: 100%;
-                height: 100%;
-                transition: all 0.5s ease 0s;
-
-                &.active {
-                    margin-top: 0;
-                }
-
-                & li {
-                    text-align: center;
-                    width: 100%;
-                    margin: 5px 0;
-                    border-bottom: 1px solid gray;
-                    padding: 10px 0;
-
-                    &:nth-child(5) {
-                        margin-left: 0;
-                    }
-
-                    &:nth-child(4) {
-                        margin-right: 0;
-                    }
-                }
-            }
-
-            &__burger {
-                display: block;
-                position: fixed;
-                width: 35px;
-                height: 25px;
-                right: 20px;
-                top: 45px;
-                transform: translateY(-50%);
-                cursor: pointer;
-                z-index: 2;
-
-                &.active {
-                    & span {
-                        transform: scale(0);
-                        transition: all 0.5s ease 0s;
-                    }
-
-                    &:before {
-                        transform: rotate(45deg);
-                        top: 10px;
-                    }
-
-                    &:after {
-                        transform: rotate(-45deg);
-                        bottom: 13px;
-                    }
-                }
-
-
-                & span {
-                    position: absolute;
-                    height: 2px;
-                    width: 100%;
-                    top: 12px;
-                    left: 0;
-                    color: red;
-                    background: #fff;
-                    transition: all 0.5s ease 0s;
-
-                }
-
-                &:before {
-                    content: '';
-                    background: #fff;
-                    position: absolute;
-                    width: 100%;
-                    height: 2px;
-                    right: 0;
-                    top: 0;
-                    transition: all 0.5s ease 0s;
-                }
-
-                &:after {
-                    content: '';
-                    background: #fff;
-                    position: absolute;
-                    width: 100%;
-                    height: 2px;
-                    right: 0;
-                    bottom: 0;
-                    transition: all 0.5s ease 0s;
-
-                }
+        .footer__social {
+            display: block;
+            text-align: center;
+            padding-top:30px;
+            &-link{
+                margin: 0 25px;
+                font-size: 22px;
             }
 
             &__list {
@@ -235,10 +123,11 @@
         }
     }
 
-
     .r {
         outline: red 2px solid;
-
     }
 
 </style>
+
+
+
