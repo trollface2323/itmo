@@ -4,12 +4,11 @@
         <head>
             <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Roboto:wght@300;500;600;700;900&display=swap"
                   rel="stylesheet">
-
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
         </head>
 
         <section class="footer">
-            <!--            <div class="container">-->
             <div class="footer__social">
                 <a href="" class="footer__social-link"><i class="fab fa-vk"></i></a>
                 <a href="" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
@@ -33,7 +32,8 @@
                         </div>
                     </div>
                     <div class="footer__block-2">
-                        <div class="footer__block-2-sub-title-1"><span style="white-space: nowrap">Тренировочная база:</span></div>
+                        <div class="footer__block-2-sub-title-1"><span
+                                style="white-space: nowrap">Тренировочная база:</span></div>
                         <div class="footer__block-2-info-1">г. Санкт-Петербург<br> Северная дорога, 25</div>
 
                     </div>
@@ -46,14 +46,13 @@
                         <div class="footer__block-4-sub-title">Оставь свои контакты</div>
                         <div class="footer__block-4-info">
                             <div class="footer__block-4-info-1"><input type="text"></div>
-                            <div class="footer__block-4-info-2"><i class="fas fa-angle-right"></i></div>
+                            <div class="footer__block-4-info-2">
+                                    <i class="fas fa-angle-right"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--    </div>-->
-
-
         </section>
 
     </div>
@@ -62,12 +61,13 @@
 <script>
 
     export default {
-        name: 'App',
+        name: 'Footer',
         components: {}
     }
 </script>
 
 <style scoped lang="scss">
+
 
     .container {
         display: flex;
@@ -77,6 +77,7 @@
 
     .footer {
         height: 240px;
+        font-family: 'Roboto', sans-serif;
 
         &__social {
             display: none;
@@ -86,14 +87,11 @@
 
             background: #414E7E;
             display: flex;
-            /*justify-content: space-between;*/
             padding: 30px 0 0 0%;
 
         }
 
         &__block-1 {
-            /*width: 50%;*/
-
             &-title {
                 color: #fff;
                 font-size: 24px;
@@ -103,25 +101,14 @@
 
             &-sub-title {
 
-                /*display: flex;*/
                 padding-top: 25px;
                 color: #60AEE8;
                 font-size: 18px;
                 font-weight: 600;
-                /*flex: 0 0 px;*/
 
-                &-1 {
-                    /*width: 200px;*/
-                    /*margin-right: 30%;*/
-                }
-
-                &-2 {
-                    /*width: 180px;*/
-                }
             }
 
             &-info {
-                /*display: flex;*/
                 padding: 20px 0 40px 0;
                 font-size: 16px;
                 color: #fff;
@@ -130,7 +117,6 @@
 
                 &-1 {
                     width: 200px;
-                    /*margin-right: 30%;*/
                 }
             }
         }
@@ -138,17 +124,13 @@
         &__block-2 {
 
             &-sub-title-1 {
-
-                /*display: flex;*/
                 padding-top: 60px;
                 color: #60AEE8;
                 font-size: 18px;
                 font-weight: 600;
-                /*flex: 0 0 px;*/
             }
 
-            &-info-1{
-                /*display: flex;*/
+            &-info-1 {
                 padding: 20px 0 40px 0;
                 font-size: 16px;
                 color: #fff;
@@ -212,9 +194,9 @@
 
     @media (max-width: 1023px) {
 
-        .container{
+        .container {
             flex-wrap: wrap;
-            justify-content:normal;
+            justify-content: normal;
         }
 
         .footer {
@@ -239,16 +221,13 @@
             &__block-1 {
                 order: 1;
                 width: 40%;
+
                 &-title {
                     font-size: 18px;
                 }
 
                 &-sub-title {
                     font-size: 14px;
-
-                    &-1 {
-                        /*margin-right: 10%;*/
-                    }
                 }
 
                 &-info {
@@ -271,7 +250,6 @@
                 }
 
                 &-info-1 {
-                    /*margin-left: 10%;*/
                     font-size: 12px;
                 }
             }
@@ -279,6 +257,7 @@
             &__block-3 {
                 width: 100%;
                 order: 4;
+
                 &-title {
                     font-size: 18px;
                 }
@@ -292,9 +271,11 @@
                     font-size: 12px;
                 }
             }
+
             &__block-4 {
                 width: 100%;
                 order: 3;
+
                 &-title {
                     font-size: 18px;
                 }
@@ -307,20 +288,26 @@
                 &-info {
                     padding-top: 5px;
                     font-size: 12px;
-                    & input{
+
+                    & input {
                         width: 270px;
                     }
-                    & svg{
+
+
+                    & svg {
                         margin-left: -10px;
+                    }
+
+                    &-2 button {
+                        background: #414E7E;
+                        border: none;
                     }
                 }
             }
         }
     }
 
-    .r {
-        outline: red 2px solid;
-    }
+
 
 </style>
 

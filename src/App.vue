@@ -19,11 +19,35 @@
 </template>
 
 <script>
+    import Menu from "@/components/Menu";
+    import MainPage from "@/components/MainPage";
+
+    // import History from "@/components/History";
+    // import Contacts from "@/components/Contacts";
+    import Footer from "@/components/Footer";
 
     export default {
-        name: 'App',
-        components: {}
+        name: "App",
+        components: {
+            // History,
+            Footer,
+            Menu,
+            // Contacts,
+            MainPage
+        },
+        data() {
+            return {
+                active: false,
+            }
+        },
+        methods: {
+            no_scroll(active) {
+                this.active = active;
+                console.log(active)
+            },
+        }
     }
+
 </script>
 
 <style scoped lang="scss">
@@ -123,11 +147,4 @@
         }
     }
 
-    .r {
-        outline: red 2px solid;
-    }
-
 </style>
-
-
-

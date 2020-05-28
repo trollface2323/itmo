@@ -2,16 +2,23 @@
 
     <div class="main">
         <head>
+            <!--            todo перенести фришты в индекс-->
             <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Roboto:wght@300;500;600;700;900&display=swap"
                   rel="stylesheet">
 
 
         </head>
 
+        <section class="header">
+            <div class="header__photo">
+                <img src="../photo/head.png" alt="">
+            </div>
+        </section>
 
         <section class="about">
-            <div class="about-photo">
-                <img src="" alt="">
+            <div class="about__photo r">
+                <img src="../photo/body.png" alt="">
+                <img src="../photo/test.jpg" alt="">
             </div>
             <div class="about__text">
                 <div class="about__title">о нас</div>
@@ -31,7 +38,47 @@
         </section>
         <section class="team">
             <div class="team__title">наша команда</div>
-            <div class="team__info">
+            <div class="team__body">
+                <div class="team__body-card">
+                    <div class="team__body-card-photo">
+                        <img src="../photo/kalash.png" alt="">
+                    </div>
+                    <div class="team__body-card-info">
+                        <div class="team__body-card-info-name">иван калашников</div>
+                        <div class="team__body-card-info-role">Гребец</div>
+                    </div>
+
+                </div>
+                <div class="team__body-card">
+                    <div class="team__body-card-photo">
+
+                        <img src="../photo/makagonov.png" alt="">
+                    </div>
+
+                    <div class="team__body-card-info">
+                        <div class="team__body-card-info-name">иван<br> макагонов</div>
+                        <div class="team__body-card-info-role">Капитан мужской сборной</div>
+                    </div>
+                </div>
+                <div class="team__body-card">
+                    <div class="team__body-card-photo">
+                        <img src="../photo/fomchenko.png" alt="">
+                    </div>
+                    <div class="team__body-card-info">
+                        <div class="team__body-card-info-name">андрей фомченко</div>
+                        <div class="team__body-card-info-role">Тренер</div>
+                    </div>
+                </div>
+                <div class="team__body-card">
+                    <div class="team__body-card-photo">
+                        <img src="../photo/borsuk.png" alt="">
+                    </div>
+                    <div class="team__body-card-info">
+                        <div class="team__body-card-info-name">елизавета борсук</div>
+                        <div class="team__body-card-info-role">Рулевая</div>
+                    </div>
+                </div>
+
 
             </div>
         </section>
@@ -40,20 +87,28 @@
                 <span>новости</span>
                 <a href="" class="news__link link">все новости</a>
             </div>
+            <div class="news__card">
+                <div class="news__card-photo">
+                    <img src="../photo/pic11.png" alt="">
+                </div>
+                <div class="news__card-title">Кубок ВУЗов - 3 место</div>
+                <div class="news__card-sub-title">тут типа какой-то текст</div>
+
+            </div>
         </section>
         <section class="photos">
-            <img src="./photo/pic1.png" alt="" class="photos_item">
-            <img src="./photo/pic2.png" alt="" class="photos_item">
-            <img src="./photo/pic3.png" alt="" class="photos_item">
-            <img src="./photo/pic4.png" alt="" class="photos_item">
-            <img src="./photo/pic5.png" alt="" class="photos_item">
-            <img src="./photo/pic6.png" alt="" class="photos_item">
-            <img src="./photo/pic7.png" alt="" class="photos_item">
-            <img src="./photo/pic8.png" alt="" class="photos_item">
-            <img src="./photo/pic9.png" alt="" class="photos_item">
-            <img src="./photo/pic10.png" alt="" class="photos_item">
-            <img src="./photo/pic11.png" alt="" class="photos_item">
-            <img src="./photo/pic12.png" alt="" class="photos_item">
+            <img src="../photo/pic1.png" alt="" class="photos_item">
+            <img src="../photo/pic2.png" alt="" class="photos_item">
+            <img src="../photo/pic3.png" alt="" class="photos_item">
+            <img src="../photo/pic4.png" alt="" class="photos_item">
+            <img src="../photo/pic5.png" alt="" class="photos_item">
+            <img src="../photo/pic6.png" alt="" class="photos_item">
+            <img src="../photo/pic7.png" alt="" class="photos_item">
+            <img src="../photo/pic8.png" alt="" class="photos_item">
+            <img src="../photo/pic9.png" alt="" class="photos_item">
+            <img src="../photo/pic10.png" alt="" class="photos_item">
+            <img src="../photo/pic11.png" alt="" class="photos_item">
+            <img src="../photo/pic12.png" alt="" class="photos_item">
         </section>
         <section class="social">
             <div class="social__title">мы в соцсетях</div>
@@ -78,28 +133,6 @@
                         class="far fa-envelope"></i></a>
             </div>
         </section>
-        <section class="footer">
-            <div class="footer__title">
-                <div class="footer__title-1">Контакты</div>
-                <div class="footer__title-2">Хочу вступить</div>
-            </div>
-            <div class="footer__sub-title">
-                <div class="footer__sub-title-1">Офис:</div>
-                <div class="footer__sub-title-2">Тренировочная база:</div>
-                <div class="footer__sub-title-3">Оставь свои контакты</div>
-            </div>
-            <div class="footer__info">
-                <div class="footer__info-1">
-                    г. Санкт-Петербург<br> ул. Ломоносова, 9; к. 4402
-                </div>
-                <div class="footer__info-2">г. Санкт-Петербург<br> Северная дорога, 25</div>
-                <div class="footer__info-3">+7 (923) 546-43-21<br> info@iurc.com</div>
-                <div class="footer__info-4"><input type="text"></div>
-                <div class="footer__info-5"><i class="fas fa-angle-right"></i></div>
-            </div>
-
-
-        </section>
 
     </div>
 </template>
@@ -122,46 +155,32 @@
 
 
         &__photo {
-            background: url("photo/head.png");
-            height: 1024px;
-        }
-    }
+            position: relative;
+            max-width: 100vw;
 
-    .menu {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        color: #fff;
+            & img {
+                width: 100%;
 
-        &__list {
-            display: flex;
-            justify-content: space-around;
-            text-transform: uppercase;
-            padding-top: 44px;
-            font-weight: 600;
-
-            & li {
-
-                list-style: none;
             }
-        }
-
-        &__item img {
-            height: 90px;
-            width: 160px;
-            transform: translateY(-50%);
         }
     }
 
     .about {
         font-family: 'Roboto', sans-serif;
+        display: flex;
 
-        display: inline-block;
+        &__photo {
+            width: 50%;
+
+            & img:last-child {
+                display: none;
+                /*width: 100%;*/
+            }
+        }
 
         &__text {
-            margin: 0 auto;
-            width: 795px;
+            /*margin: 0 auto;*/
+            /*width: 50%;*/
         }
 
         &__title {
@@ -174,20 +193,16 @@
         }
 
         &__sub-title {
-            margin: 56px 0 80px 56px;
+            margin: 56px auto 80px auto;
             font-weight: 300;
-            width: 660px;
+            width: 70%;
             font-size: 24px;
             line-height: 1.6em;
+
+            & p:last-child {
+                /*height: 200px;*/
+            }
         }
-
-        &-photo {
-            background-image: url(photo/body.png);
-            width: 645px;
-            height: 905px;
-        }
-
-
     }
 
     .link {
@@ -223,18 +238,69 @@
             display: inline-block;
             text-transform: uppercase;
             color: #fff;
-            margin: 75px 0 0 115px;
+            margin: 75px 0 60px 115px;
             font-size: 48px;
             font-weight: 700;
+        }
+
+        &__body {
+            display: flex;
+            padding: 0 120px;
+            flex-wrap: wrap;
+            /*justify-content: space-between;*/
+
+            &-card {
+                display: flex;
+                width: 30%;
+                /*flex-wrap: wrap;*/
+                margin: 0 25px 70px 0;
+
+                &-photo {
+                    /*width: 150px;*/
+                    /*height: 150px;*/
+
+                    & img {
+                        width: 150px;
+                        height: 150px;
+                        /*height: 100%;*/
+                        border-radius: 50%;
+                        /*object-fit: contain;*/
+                        object-fit: cover;
+                    }
+                }
+
+                &-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 15px;
+
+                    &-name {
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        color: #fff;
+                        font-size: 24px;
+                    }
+
+                    &-role {
+                        color: #60AEE8;
+                        font-size: 18px;
+                        /*text-transform: ;*/
+                    }
+                }
+            }
         }
     }
 
     .news {
-        height: 670px;
+        /*height: 670px;*/
+        margin: 80px 0 0 115px;
 
         &__title {
             display: flex;
             align-items: center;
+            /*margin: 80px 0 45px 115px;*/
+            margin-bottom: 45px;
 
             & span {
                 font-weight: 700;
@@ -243,7 +309,6 @@
                 font-size: 48px;
             }
 
-            margin: 80px 0 0 115px;
         }
 
         &__link {
@@ -256,6 +321,38 @@
             border-radius: 9px;
             color: #60AEE8;
         }
+
+        &__card {
+            margin-bottom: 80px;
+
+            &-photo {
+                width: 30%;
+                margin-bottom: 20px;
+
+                & img {
+                    height: 200px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &-title {
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            &-sub-title {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .photos {
+        & img {
+            width: 16.666%;
+        }
+
     }
 
     .social {
@@ -387,9 +484,241 @@
         outline: red 2px solid;
     }
 
-    /*@media (max-width: ) {*/
-    /*    */
-    /*}*/
+
+    @media (max-width: 1333px) {
+        .about {
+            &__photo {
+                /*width: 50%;*/
+
+                & img {
+                    width: 45vw;
+                }
+            }
+
+            &__text {
+                /*width: 50%;*/
+            }
+
+            &__title {
+                margin-top: 40px;
+            }
+
+            &__sub-title {
+                margin: 25px auto 50px auto;
+                /*line-height: 1.35em;*/
+                /*font-size: 22px;*/
+                & p:last-child {
+                    /*margin-bottom: 0;*/
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 1300px) {
+        .team {
+            &__body {
+                &-card {
+                    &-photo {
+                        & img {
+                            width: 120px;
+                            height: 120px;
+                        }
+                    }
+
+                    &-info {
+                        &-name {
+                            font-size: 16px;
+                        }
+
+                        &-role {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 1246px) {
+        .about {
+            &__sub-title {
+                /*line-height: 1.35em;*/
+                font-size: 22px;
+            }
+
+        }
+    }
+
+    @media (max-width: 1193px) {
+        .about {
+            &__sub-title {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    @media (max-width: 1130px) {
+        .about {
+            &__sub-title {
+                line-height: 1.4em;
+                font-size: 19.5px;
+            }
+
+            &__link {
+                &-item {
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 1023px) {
+
+        .header {
+            display: none;
+        }
+        .about {
+            display: block;
+
+            &__photo {
+                width: 100vw;
+            }
+
+            &__photo {
+                display: block;
+                outline: red 2px solid;
+                margin-top: 80px;
+                width: 100%;
+
+                & img:first-child {
+                    display: none;
+                }
+
+                & img:last-child {
+                    display: block;
+                    width: 100vw;
+                }
+            }
+
+            &__text {
+                padding: 0em 10px;
+                /*margin: 0 auto;*/
+                /*outline: red 2px solid;*/
+                /*width: 100%;*/
+
+
+            }
+
+            &__title {
+                margin: 30px 0 0 0;
+                font-size: 24px;
+            }
+
+            &__sub-title {
+                width: 100%;
+                font-size: 14px;
+            }
+
+            &__link {
+                margin-bottom: 20px;
+
+                &-item {
+                    font-size: 14px;
+                }
+            }
+        }
+        .team {
+            display: flex;
+            flex-direction: column;
+            height: 340px;
+
+
+            &__title {
+                justify-content: center;
+                font-size: 24px;
+                margin: 20px auto 40px auto;
+            }
+
+            &__body {
+                padding: 0;
+
+                &-card:nth-child(2), &-card:nth-child(3), &-card:nth-child(4) {
+                    display: none;
+                }
+
+                &-card {
+                    margin: 0;
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &-photo {
+                        & img {
+                            width: 180px;
+                            height: 180px;
+                        }
+                    }
+
+                    &-info {
+                        &-role {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .news {
+
+            margin: 30px 0;
+            &__title {
+                display: block;
+                margin: 0;
+                text-align: center;
+            }
+            &__card{
+                margin: 0 auto;
+                width: 90%;
+                text-align: center;
+                &-photo{
+                    margin: 0 auto;
+                    width: 90%;
+                    outline: 2px solid red;
+                }
+                &-title{
+                    margin: 20px auto 20px auto;
+                    width: 85%;
+                }
+                &-sub-title{
+                    margin: 0 auto;
+                    width: 85%;
+                }
+            }
+
+        }
+        .social {
+            display: none;
+        }
+        .news {
+            &__title {
+                margin-left: 0;
+
+                & span {
+                    font-size: 28px;
+                }
+            }
+
+            &__link {
+                display: none;
+            }
+        }
+        .photos {
+            display: none;
+        }
+    }
 
     .bg-cover {
         background-repeat: no-repeat;

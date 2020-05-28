@@ -1,19 +1,21 @@
 <head>
-    <link rel="stylesheet" href="./normilize.css">
 </head>
 <template>
     <div class="menu">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
         <div class="menu__body">
-            <div class="menu__burger" :class="{active}" @click="active = !active"><span></span></div>
+            <div class="menu__burger" :class="{active: active}"
+                                      @click="open_menu"><span></span></div>
             <div class="menu__logo">
                 <a href="#">
-                    <img src="./photo/logo.png" alt="">
+                    <img src="../photo/logo.png" alt="">
                 </a>
             </div>
 
             <ul class="menu__list" :class="{active}">
                 <div class="menu__photo">
-                    <img src="./photo/menu.png" alt="">
+                    <img src="../photo/menu.png" alt="">
                 </div>
                 <li class="menu__item link"><a href="#" class="link">о нас</a></li>
                 <li class="menu__item link"><a href="#" class="link">история</a></li>
@@ -36,18 +38,38 @@
 
 <script>
 
-    export default {
+export default {
+
         name: "Menu",
         data() {
             return {
-                active: false
+                active: false,
+                a:false,
+
             }
         },
-        methods: {}
+        methods: {
+            open_menu() {
+                console.log(1)
+                this.active = !this.active;
+                this.$emit("noscroll", this.active)
+
+            },
+            test(){
+                this.a = !this.a;
+                this.$emit('test', this.a)
+            }
+
+
+        }
     }
 </script>
 
 <style scoped lang="scss">
+
+    template {
+    }
+
     ul {
         margin: 0;
         padding: 0;
@@ -56,10 +78,11 @@
 
     .link {
         text-decoration: none;
-        color: #fff;
+        color: rgba(255, 255, 255, 0.9);
     }
 
     .menu {
+
         background: #414E7E;
         position: fixed;
         top: 0;
@@ -71,8 +94,6 @@
         &__photo {
             position: relative;
             display: none;
-
-            /*top: 80px;*/
         }
 
         &__body {
@@ -97,6 +118,8 @@
         }
 
         &__list {
+
+            font-family: 'Roboto', sans-serif;
             display: flex;
             justify-content: center;
             text-transform: uppercase;
@@ -109,13 +132,8 @@
                 margin: 0 3%;
                 list-style: none;
 
-                /*&:nth-child(1) {*/
-                /*    display: none;*/
-                /*}*/
-
                 &:nth-child(4) {
                     margin-right: 10%;
-                    /*border: 3px red solid;*/
                 }
 
                 &:nth-child(5) {
@@ -124,7 +142,8 @@
 
             }
         }
-        &__social{
+
+        &__social {
             display: none;
         }
 
@@ -140,7 +159,7 @@
 
             &__photo {
                 text-align: center;
-                display: block;
+                display: none;
 
                 & img {
                     width: 100%;
@@ -153,7 +172,6 @@
             }
 
             &__list {
-                /*position: absolute;*/
                 display: flex;
                 position: relative;
                 flex-direction: column;
@@ -222,7 +240,6 @@
                     width: 100%;
                     top: 12px;
                     left: 0;
-                    color: red;
                     background: #fff;
                     transition: all 0.5s ease 0s;
 
@@ -251,22 +268,18 @@
 
                 }
             }
-            &__social{
+
+            &__social {
                 display: block;
                 padding: 50px;
-                &-link{
+
+                &-link {
                     text-decoration: none;
                     color: #fff;
                     margin: 0 15px;
                 }
             }
         }
-    }
-
-
-    .r {
-        outline: red 2px solid;
-
     }
 
 </style>
