@@ -16,7 +16,7 @@
         </section>
 
         <section class="about">
-            <div class="about__photo r">
+            <div class="about__photo">
                 <img src="../photo/body.png" alt="">
                 <img src="../photo/test.jpg" alt="">
             </div>
@@ -206,7 +206,6 @@
     }
 
     .link {
-        border: 2px #60AEE8 solid;
         border-radius: 20px;
         text-decoration: none;
 
@@ -319,6 +318,7 @@
             font-weight: 700;
             padding: 10px 15px;
             border-radius: 9px;
+            border: solid;
             color: #60AEE8;
         }
 
@@ -480,11 +480,6 @@
         }
     }
 
-    .r {
-        outline: red 2px solid;
-    }
-
-
     @media (max-width: 1333px) {
         .about {
             &__photo {
@@ -590,7 +585,6 @@
 
             &__photo {
                 display: block;
-                outline: red 2px solid;
                 margin-top: 80px;
                 width: 100%;
 
@@ -686,7 +680,6 @@
                 &-photo{
                     margin: 0 auto;
                     width: 90%;
-                    outline: 2px solid red;
                 }
                 &-title{
                     margin: 20px auto 20px auto;

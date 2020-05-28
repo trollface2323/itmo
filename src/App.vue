@@ -20,7 +20,8 @@
 
 <script>
     import Menu from "@/components/Menu";
-    import MainPage from "@/components/MainPage";
+    // import MainPage from "@/components/MainPage";
+    import News from "@/components/News";
 
     // import History from "@/components/History";
     // import Contacts from "@/components/Contacts";
@@ -33,7 +34,8 @@
             Footer,
             Menu,
             // Contacts,
-            MainPage
+            // MainPage,
+            News
         },
         data() {
             return {
