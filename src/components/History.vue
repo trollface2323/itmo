@@ -1,8 +1,6 @@
 <template>
 
     <div class="main">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-
         <div class="header">
             <div class="header__photo">
                 <img src="../photo/history1.png" alt="">

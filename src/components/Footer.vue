@@ -1,13 +1,6 @@
 <template>
 
     <div class="main">
-        <head>
-            <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Roboto:wght@300;500;600;700;900&display=swap"
-                  rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-
-        </head>
-
         <section class="footer">
             <div class="footer__social">
                 <a href="" class="footer__social-link"><i class="fab fa-vk"></i></a>
@@ -68,6 +61,9 @@
 
 <style scoped lang="scss">
 
+    .main{
+        font-family: 'Roboto', sans-serif;
+    }
 
     .container {
         display: flex;
@@ -209,6 +205,7 @@
                 background: #414E7E;
                 text-align: center;
                 padding-top: 30px;
+
 
 
                 &-link {

@@ -21,8 +21,10 @@
 <script>
     import Menu from "@/components/Menu";
     // import MainPage from "@/components/MainPage";
-    import News from "@/components/News";
-
+    // import News from "@/components/News";
+    // import Media from "@/components/Media";
+    // import Team from "@/components/Team";
+    import TeamMob from "@/components/TeamMob";
     // import History from "@/components/History";
     // import Contacts from "@/components/Contacts";
     import Footer from "@/components/Footer";
@@ -35,7 +37,10 @@
             Menu,
             // Contacts,
             // MainPage,
-            News
+            // News,
+            // Media,
+            // Team,
+            TeamMob
         },
         data() {
             return {

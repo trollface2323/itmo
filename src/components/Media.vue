@@ -1,29 +1,26 @@
 <template>
     <section class="news">
         <div class="news__title">
-            <h1>новости</h1>
+            <h1>медиа</h1>
         </div>
         <div class="body">
             <div class="body__card">
                 <div class="body__card-photo">
                     <img src="../photo/pic11.png" alt="">
                 </div>
-                <div class="body__card-title">Кубок ВУЗов - 3 место</div>
-                <div class="body__card-sub-title">тут типа какой-то текст</div>
+                <div class="body__card-title">Первый этап</div>
             </div>
             <div class="body__card">
                 <div class="body__card-photo">
                     <img src="../photo/pic11.png" alt="">
                 </div>
                 <div class="body__card-title">Кубок ВУЗов - 3 место</div>
-                <div class="body__card-sub-title">тут типа какой-то текст</div>
             </div>
             <div class="body__card">
                 <div class="body__c ard-photo">
                     <img src="../photo/pic11.png" alt="">
                 </div>
                 <div class="body__card-title">Кубок ВУЗов - 3 место</div>
-                <div class="body__card-sub-title">тут типа какой-то текст</div>
             </div>
         </div>
     </section>
@@ -53,10 +50,9 @@
     .body {
         display: flex;
 
-
         &__card {
-            font-family: 'Exo 2', sans-serif;
-            text-align: center;
+            position: relative;
+            /*text-align: center;*/
             max-width: 300px;
             width: 31%;
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -71,12 +67,17 @@
             }
 
             &-title {
-                margin: 20px 0;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                font-family: 'Exo 2', sans-serif;
+                color: #fff;
                 font-weight: 700;
                 font-size: 18px;
-            }
-            &-sub-title{
-                margin-bottom: 20px;
+                width: 100%;
+                height: 54px;
+                background: rgba(23, 56, 43, 0.6);
+                padding-left: 20px;
             }
         }
     }
@@ -110,7 +111,6 @@
                     margin: 0 auto 40px auto;
                 }
             }
-
         }
 
     }

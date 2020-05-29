@@ -1,9 +1,5 @@
-<head>
-</head>
 <template>
     <div class="menu">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-
         <div class="menu__body">
             <div class="menu__burger" :class="{active: active}"
                                       @click="open_menu"><span></span></div>
@@ -67,9 +63,6 @@ export default {
 
 <style scoped lang="scss">
 
-    template {
-    }
-
     ul {
         margin: 0;
         padding: 0;
@@ -82,7 +75,7 @@ export default {
     }
 
     .menu {
-
+        font-family: 'Exo 2', sans-serif;
         background: #414E7E;
         position: fixed;
         top: 0;
@@ -271,7 +264,7 @@ export default {
 
             &__social {
                 display: block;
-                padding: 50px;
+                padding: 50px 0;
 
                 &-link {
                     text-decoration: none;

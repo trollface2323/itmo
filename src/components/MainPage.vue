@@ -1,14 +1,6 @@
 <template>
 
     <div class="main">
-        <head>
-            <!--            todo перенести фришты в индекс-->
-            <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Roboto:wght@300;500;600;700;900&display=swap"
-                  rel="stylesheet">
-
-
-        </head>
-
         <section class="header">
             <div class="header__photo">
                 <img src="../photo/head.png" alt="">
@@ -148,6 +140,7 @@
 <style scoped lang="scss">
 
     .main {
+        font-family: 'Roboto', sans-serif;
     }
 
     .header {
@@ -174,13 +167,7 @@
 
             & img:last-child {
                 display: none;
-                /*width: 100%;*/
             }
-        }
-
-        &__text {
-            /*margin: 0 auto;*/
-            /*width: 50%;*/
         }
 
         &__title {
@@ -198,10 +185,6 @@
             width: 70%;
             font-size: 24px;
             line-height: 1.6em;
-
-            & p:last-child {
-                /*height: 200px;*/
-            }
         }
     }
 
@@ -246,24 +229,18 @@
             display: flex;
             padding: 0 120px;
             flex-wrap: wrap;
-            /*justify-content: space-between;*/
 
             &-card {
                 display: flex;
                 width: 30%;
-                /*flex-wrap: wrap;*/
                 margin: 0 25px 70px 0;
 
                 &-photo {
-                    /*width: 150px;*/
-                    /*height: 150px;*/
 
                     & img {
                         width: 150px;
                         height: 150px;
-                        /*height: 100%;*/
                         border-radius: 50%;
-                        /*object-fit: contain;*/
                         object-fit: cover;
                     }
                 }
@@ -284,7 +261,6 @@
                     &-role {
                         color: #60AEE8;
                         font-size: 18px;
-                        /*text-transform: ;*/
                     }
                 }
             }
@@ -292,13 +268,12 @@
     }
 
     .news {
-        /*height: 670px;*/
+        font-family: 'Exo 2', sans-serif;
         margin: 80px 0 0 115px;
 
         &__title {
             display: flex;
             align-items: center;
-            /*margin: 80px 0 45px 115px;*/
             margin-bottom: 45px;
 
             & span {
@@ -483,15 +458,10 @@
     @media (max-width: 1333px) {
         .about {
             &__photo {
-                /*width: 50%;*/
 
                 & img {
                     width: 45vw;
                 }
-            }
-
-            &__text {
-                /*width: 50%;*/
             }
 
             &__title {
@@ -500,10 +470,8 @@
 
             &__sub-title {
                 margin: 25px auto 50px auto;
-                /*line-height: 1.35em;*/
-                /*font-size: 22px;*/
+
                 & p:last-child {
-                    /*margin-bottom: 0;*/
                 }
             }
         }
@@ -539,7 +507,6 @@
     @media (max-width: 1246px) {
         .about {
             &__sub-title {
-                /*line-height: 1.35em;*/
                 font-size: 22px;
             }
 
@@ -600,11 +567,6 @@
 
             &__text {
                 padding: 0em 10px;
-                /*margin: 0 auto;*/
-                /*outline: red 2px solid;*/
-                /*width: 100%;*/
-
-
             }
 
             &__title {
@@ -668,24 +630,29 @@
         .news {
 
             margin: 30px 0;
+
             &__title {
                 display: block;
                 margin: 0;
                 text-align: center;
             }
-            &__card{
+
+            &__card {
                 margin: 0 auto;
                 width: 90%;
                 text-align: center;
-                &-photo{
+
+                &-photo {
                     margin: 0 auto;
                     width: 90%;
                 }
-                &-title{
+
+                &-title {
                     margin: 20px auto 20px auto;
                     width: 85%;
                 }
-                &-sub-title{
+
+                &-sub-title {
                     margin: 0 auto;
                     width: 85%;
                 }
